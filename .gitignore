@@ -1,0 +1,55 @@
+# ──────────────────────────────────────────
+# WanderLink – Root .gitignore
+# ──────────────────────────────────────────
+
+# ── Backend (Maven / Spring Boot) ─────────
+backend/target/
+backend/data/*
+!backend/data/.gitkeep
+backend/.env
+backend/*.log
+backend/logs/
+
+# ── Frontend (Node / Vite) ────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ── IDE ───────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+.classpath
+.project
+.settings/
+
+# ── OS ────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Secrets (never commit) ────────────────
+*.pem
+*.p12
+*.jks
+*.key
+secrets.yml
+secrets.yaml
+
+# ── Logs ──────────────────────────────────
+*.log
+*.log.*
+
+# ── Maven wrapper caches ──────────────────
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# ── Temporary files ───────────────────────
+*.tmp
+*.swp
+*.bak
+~$*
